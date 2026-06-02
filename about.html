@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Tejaswini</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-content {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+        }
+        .about-text {
+            flex: 1;
+        }
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-primary);
+        }
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .skill-item {
+            background-color: var(--bg-tertiary);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        .skill-item:hover {
+            background-color: var(--accent-primary);
+            color: #000;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Tejaswini<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certification.html">Certification</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1 class="section-title animate-fade-in">About <span>Me</span></h1>
+        
+        <section class="about-content animate-slide-in delay-100">
+            <div class="about-text">
+                <h3>My Journey</h3>
+                <p>Hello! I am Tejaswini, a dedicated and creative professional with a strong foundation in building meaningful projects. I am passionate about learning new technologies and applying them to solve real-world problems.</p>
+                <p>My approach to work is defined by a commitment to excellence, continuous learning, and a collaborative mindset. I believe in the power of good design and efficient solutions.</p>
+                
+                <h3 style="margin-top: 3rem; font-size: 1.5rem;">Core Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">HTML & CSS</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">React</div>
+                    <div class="skill-item">UI/UX Design</div>
+                    <div class="skill-item">Problem Solving</div>
+                    <div class="skill-item">Communication</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tejaswini. All rights reserved.</p>
+    </footer>
+</body>
+</html>
